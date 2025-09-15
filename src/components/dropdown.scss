@@ -1,0 +1,53 @@
+@use '../styles/_variables' as *;
+
+.dropdown {
+  width: 100%;
+  border-radius: $border-radius-small;
+  overflow: visible;
+  margin-bottom: $spacing-lg;
+  position: relative;
+
+  .dropdown-toggle {
+    width: 100%;
+    background: $red;
+    color: $white;
+    border: none;
+    border-radius: $border-radius-small;
+    padding: $spacing-md $spacing-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    position: relative;
+    z-index: 2;
+
+    .chevron-icon {
+      width: 24px;
+      height: 24px;
+      color: $white;
+      margin-left: $spacing-md;
+      transition: transform 0.3s;
+    }
+  }
+
+  .dropdown-content {
+    background: $grey-light;
+    border-radius: 0 0 $border-radius-small $border-radius-small;
+    padding: $spacing-lg $spacing-md $spacing-md $spacing-md;
+    color: $black;
+    font-size: $font-size-base;
+    margin-top: -$spacing-md;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

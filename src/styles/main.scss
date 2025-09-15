@@ -1,0 +1,210 @@
+@use '../styles/_variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $white;
+  margin: 0;
+}
+
+.container {
+  max-width: $screen-xl;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-height: calc(100vh - 280px);
+
+  @media (max-width: $screen-xl) {
+    padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
+  }
+}
+
+.home-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-lg;
+  padding: $spacing-lg 0;
+  @media (max-width: $screen-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.accommodation-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  background-color: $grey-light;
+  border-radius: $border-radius-large;
+}
+.accommodation-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: $border-radius-large;
+  margin-bottom: $spacing-lg;
+}
+
+.accommodation-title {
+  color: $red;
+  font-size: 36px;
+  margin: 0 0 $spacing-sm 0;
+}
+
+.accommodation-location {
+  color: $black;
+  font-size: 18px;
+  margin-bottom: $spacing-sm;
+}
+
+.accommodation-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  justify-content: flex-start;
+}
+
+.accommodation-tag {
+  background: $red;
+  color: $white;
+  border-radius: $border-radius-small;
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.accommodation-host {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.host-name {
+  color: $red;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: pre-line;
+  text-align: right;
+}
+
+.host-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.accommodation-dropdowns {
+  display: flex;
+  gap: $spacing-lg;
+  margin: $spacing-lg 0;
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.accommodation-main-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: $spacing-lg;
+}
+
+.accommodation-main-left {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.accommodation-main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+@media (max-width: $screen-md) {
+  .accommodation-main-info {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+  .accommodation-main-right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.about-img {
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: $border-radius-large;
+  margin-bottom: $spacing-lg;
+}
+
+.about-content {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.not-found {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: $spacing-lg 0;
+
+  h1 {
+    font-size: 288px;
+    color: $red;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p {
+    font-size: $font-size-larger;
+    color: $red;
+  }
+
+  a {
+    font-size: $font-size-base;
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+ h1 {
+      font-size: 96px;
+    }
+
+    p {
+      font-size: $font-size-base;
+      text-align: center;
+    }
+
+    a {
+      font-size: $font-size-medium;
+    }
+}
+}

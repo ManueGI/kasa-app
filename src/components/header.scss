@@ -1,0 +1,38 @@
+@use '../styles/_variables' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $screen-xl;
+  margin: 20px auto;
+  height: 70px;
+
+  .header-link {
+    color: $black;
+    text-decoration: none;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-lg;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
+  }
+
+  @media (max-width: $screen-md) {
+    img {
+      max-width: 145px;
+      height: auto;
+    }
+
+    .header-link {
+      text-transform: uppercase;
+      font-size: $font-size-small;
+    }
+  }
+}

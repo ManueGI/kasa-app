@@ -1,0 +1,14 @@
+@use '../styles/_variables' as *;
+
+.footer {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+  width: 100%;
+  font-size: $font-size-lg;
+  font-weight: 500;
+}

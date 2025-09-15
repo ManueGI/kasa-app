@@ -1,0 +1,30 @@
+@use '../styles/_variables' as *;
+
+
+.banner {
+  background-image: url(../assets/mask-group.png);
+  background-size: cover;
+  background-position: center;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-weight: bold;
+  border-radius: $border-radius-large;
+  max-width: $screen-xl;
+  margin: 20px auto;
+  overflow: hidden;
+
+  h1 {
+    font-size: $font-size-xl;
+    margin: $spacing-md;
+  }
+
+  @media (max-width: $screen-md) {
+    h1 {
+      font-size: $font-size-lg;
+      justify-content: start;
+    }
+  }
+}

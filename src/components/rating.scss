@@ -1,0 +1,20 @@
+@use '../styles/_variables' as *;
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: $spacing-sm;
+
+  .star {
+    width: 24px;
+    height: 24px;
+    margin-right: $spacing-xs;
+  }
+  .star-red {
+    color: $red;
+  }
+
+  .star-grey {
+    color: $grey;
+  }
+}
