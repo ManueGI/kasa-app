@@ -1,12 +1,33 @@
-# React + Vite
+# Kasa 🏠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur **Kasa**, la plateforme de location d’appartements entre particuliers réalisée en React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Lancer le projet
 
-## Expanding the ESLint configuration
+Avant de commencer, assurez-vous d’avoir installé :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js
+- npm
+
+Ensuite :
+
+1. Installez les dépendances avec : `npm install`
+2. Installez Heroicons avec : `npm install @heroicons/react`
+3. Lancez l’application avec : `npm start`
+4. Ouvrez [http://localhost:5173](http://localhost:5173) dans votre navigateur
+
+---
+
+## 🛠️ Stack technique
+
+- React
+- Vite
+- Sass
+- React Router
+- Heroicons
+
+---
+
+Projet réalisé dans le cadre de la formation OpenClassrooms.
